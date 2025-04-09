@@ -12,22 +12,24 @@
             display: flex;
             align-items: center;
         }
+
         .judul {
             color: black;
         }
-
         
         .container {
-            margin-top: 200px;
+            margin-top: 100px;
             background-color: #f2e5e4;
             border: 1px solid black;
             border-radius: 20px;
-            width: 50%;
+            width: 60%;
         }
+
         .head-conteiner {
             padding: 20px;
             text-align: center;
         }
+
         .identitas {
             padding: 20px;
             text-align: center;
@@ -40,7 +42,7 @@
             margin-top: 20px;   
         }
 
-        .list-tugas ul{
+        .list-tugas ul {
             list-style-type: none;
             padding: 0;    
             gap: 15px;
@@ -49,8 +51,29 @@
             align-items: center;
         }
 
+        .progress {
+            padding: 20px;
+            margin-top: 20px;
+        }
 
+        .progress h2 {
+            text-align: center;
+        }
 
+        .progress ul {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .progress ul li {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -65,13 +88,49 @@
             <h2>Kelas : 4D Informatika</h2>
         </div>
 
-        <div class="list-tugas">
-            <h2>List Tugas</h2>
+        <div class="progress">
+            <h2>Progress Praktikum - Pertemuan 1</h2>
             <ul>
-                <li> <a href="./pertemuan-1//lamaran.html">Tugas 1</a></li>
-                <li><a href="./pertemuan-2/form-daftar.html">Tugas 2</a></li>
-                <li> <a href="./pertemuan-3/tugas/index.html">Tugas 3</a></li>
-                <li><a href="./pertemuan-6/tugas/index.html">Tugas 4</a></li>
+                <li>Tugas: Membuat halaman surat lamaran kerja menggunakan HTML dan CSS.</li>
+                <li>Status: ✅ Selesai</li>
+                <li>Catatan: Sudah mengimplementasikan elemen gambar, tabel, dan list.</li>
+                <li>Link: <a href="./pertemuan-1/lamaran.html">Lihat Hasil Tugas</a></li>
+                <li>Link: <a href="./pertemuan-1/index.html">Lihat Hasil Progress</a></li>
+            </ul>
+        </div>
+
+        <div class="progress">
+            <h2>Progress Praktikum - Pertemuan 2</h2>
+            <ul>
+                <li>Tugas: Membuat form pendaftaran dengan inputan lengkap (text, radio, checkbox, dsb).</li>
+                <li>Status: ✅ Selesai</li>
+                <li>Catatan: Validasi sederhana sudah dilakukan, layout masih bisa ditingkatkan.</li>
+                <li>Link: <a href="./pertemuan-2/form-daftar.html">Lihat Hasil Tugas</a></li>
+                <li>Link: <a href="./pertemuan-2/form.html">Lihat Hasil Progress</a></li>
+            </ul>
+        </div>
+
+        <div class="progress">
+            <h2>Progress Praktikum - Pertemuan 3</h2>
+            <ul>
+                <li>Tugas: Membuat struktur website sederhana dengan beberapa halaman dan navigasi.</li>
+                <li>Status: ✅ Selesai</li>
+                <li>Catatan: Navigasi antar halaman sudah berfungsi, desain bisa diperbaiki lebih lanjut.</li>
+                <li>Link: <a href="./pertemuan-3/tugas/index.html">Lihat Hasil Tugas</a></li>
+                <li>Link: <a href="./pertemuan-3/materi/index.html">Lihat Hasil Progress</a></li>
+            </ul>
+        </div>
+
+        <div class="progress">
+            <h2>Progress Praktikum - Pertemuan 4</h2>
+            <ul>
+                <li>Tugas: Membuat tampilan dan layout dengan kombinasi Flexbox dan Grid.</li>
+                <li>Status: ✅ Selesai</li>
+                <li>Catatan: Sudah menerapkan Grid layout, namun belum sepenuhnya responsif.</li>
+                <li>Link: <a href="./pertemuan-6/tugas/index.html">Lihat Hasil Tugas</a></li>
+                <li>Link: <a href="./pertemuan-6/internal/index.html">Lihat Hasil Progress</a></li>
+                <li>Link: <a href="./pertemuan-6/tugas/index.html">Lihat Hasil Tugas</a></li>
+                <li>Link: <a href="./pertemuan-6/kalkulator/index.html">Lihat Hasil Progress</a></li>
             </ul>
         </div>
     </div>
