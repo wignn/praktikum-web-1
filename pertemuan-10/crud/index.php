@@ -1,40 +1,50 @@
-<?php 
-    include('connect.php')
-?>
+<?php include("connect.php"); ?>
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form UKT</title>
-    <link rel="stylesheet" href="../../style.css">
+    <title>Pendaftaran Siswa Baru | SMK Coding</title>
 </head>
-<body class="warp">
+<body>
+    <header>
+        <h3>Siswa yang sudah mendaftar</h3>
+    </header>
 
-<div class="conteiner">
-    <form class="form" action="proses.php" method="POST">
-        <label for="npm">NPM:</label>
-        <input type="text" id="npm" name="npm" required><br><br>
+    <nav>
+        <a href="tambah-siswa.php">Tambah Baru</a>
+    </nav>
 
-        <label for="nama">Nama:</label>
-        <input type="text" id="nama" name="nama" required><br><br>
+    <br>
 
-        <label for="prodi">Prodi:</label>
-        <input type="text" id="prodi" name="prodi" required><br><br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>NPM</th>
+                <th>Nama</th>
+                <th>Prodi</th>
+                <th>Semester</th>
+                <th>Ukt</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            $sql = "SELECT * FROM mahasiswa";
+            $query = mysqli_query($db, $sql);
 
-        <label for="semester">Semester:</label>
-        <input type="number" id="semester" name="semester" required><br><br>
+            while ($siswa = mysqli_fetch_array($query)) {
+                echo "<tr>";
+                echo "<td>" . $siswa['NPM'] . "</td>";
+                echo "<td>" . $siswa['Nama'] . "</td>";
+                echo "<td>" . $siswa['Prodi'] . "</td>";
+                echo "<td>" . $siswa['Semester'] . "</td>";
+                echo "<td>" . $siswa['Ukt'] . "</td>";
+                echo "</tr>";
+            }
+            ?>
+        </tbody>
+    </table>
 
-        <label for="ukt">UKT (dalam Rupiah):</label>
-        <input type="number" id="ukt" name="ukt" required><br><br>
-
-        <button type="submit">Submit</button>
-    </form>
-
-</div>
+    <p>Total: <?php echo mysqli_num_rows($query) ?></p>
 
 </body>
-
 </html>

@@ -60,7 +60,7 @@ echo $mhs->sapa();
 <body style="justify-content: center; display: flex; align-items: center; height: 100vh; flex-direction: column;">
     <div style="text-align:center; background-color: #f0f0f0; width: 50%; padding: 20px; border-radius: 5px;">
         <h1>Input Nilai Mahasiswa</h1>
-        <a href="../../pertemuan-8/tugas-1/index.php">Isi Nilai mahasiswa</a>
+        <a href="../../pertemuan-10/tugas-1/index.php">Isi Nilai mahasiswa</a>
     </div>
 
 </body>
