@@ -30,6 +30,17 @@
                    <li class="nav-item">
                           <a class="nav-link" href="tambah_pelanggan.php">Tambah Pelanggan</a>
                      </li>
+                     <?php
+                        if (isset($_SESSION['login_Un51k4'])) {
+                            echo '<li class="nav-item">';
+                            echo '<a class="nav-link" href="logout.php">Logout</a>';
+                            echo '</li>';
+                        } else {
+                            echo '<li class="nav-item">';
+                            echo '<a class="nav-link" href="login.php?message=Mengakses+fitur+harus+login+dulu+bro">Login</a>';
+                            echo '</li>';
+                        }
+                     ?>
                      
                </ul>
            </div>
