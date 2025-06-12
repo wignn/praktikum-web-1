@@ -24,9 +24,13 @@
                    <li class="nav-item">
                        <a class="nav-link" href="hapus.php">Hapus Buku</a>
                    </li>
-                     <li class="nav-item">
+                   <li class="nav-item">
+                          <a class="nav-link" href="daftar_pelanggan.php">Daftar Pelanggan</a>
+                     </li>
+                   <li class="nav-item">
                           <a class="nav-link" href="tambah_pelanggan.php">Tambah Pelanggan</a>
                      </li>
+                     
                </ul>
            </div>
        </div>
