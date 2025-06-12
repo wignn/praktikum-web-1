@@ -20,9 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
    // Validasi hasil
    if ($result->num_rows === 1) {
-      
        $user = $result->fetch_assoc();
-      
        $_SESSION['id'] = $user['id'];
        $_SESSION['nama'] = $user['username'];
        $_SESSION['login_Un51k4'] = true;
