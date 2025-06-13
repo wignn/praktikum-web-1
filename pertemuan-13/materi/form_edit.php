@@ -1,7 +1,7 @@
 <?php
+include 'session.php';
 include 'koneksi_db.php';
 include 'nav.php';
-
 
 $id = $_GET['id'] ?? 0;
 
